@@ -85,17 +85,17 @@ public class UserSecService implements UserDetailsService{
 
             if (userSecRepository.count() == 0) {
                 UserSecEntity user1 = new UserSecEntity();
-                user1.setName("Marinellys Figueroa");
-                user1.setEmail("mfigueroa@gmail.com");
+                user1.setName("John Doe");
+                user1.setEmail("johndoe@mail.com");
                 // user1.setPassword("mf1234");
-                user1.setPassword(passwordEncoder.encode("mf1234"));
+                user1.setPassword(passwordEncoder.encode("jd1234"));
                 user1.setRoles(new HashSet<>(Set.of(roleManager)));
 
                 UserSecEntity user2 = new UserSecEntity();
-                user2.setName("Juan Peréz");
-                user2.setEmail("jperez@gmail.com");
+                user2.setName("Jane Lewis");
+                user2.setEmail("janelewis@mail.com");
                 // user2.setPassword("jp1234");
-                user2.setPassword(passwordEncoder.encode("jp1234"));
+                user2.setPassword(passwordEncoder.encode("jl1234"));
                 user2.setRoles(new HashSet<>(Set.of(roleUser)));
 
                 userSecRepository.saveAll(List.of(user1, user2));

@@ -47,8 +47,8 @@ public class UserService {
   @PostConstruct
   void initDatabase() {
     userRepository.save(new UserEntity("John Doe", "johndoe@mail.com", "1234567890"));
-    userRepository.save(new UserEntity("Jane Doe", "janedoe@mail.com", "0987654321"));
-    userRepository.save(new UserEntity("John Smith", "johnsmith@mail.com", "1234567890"));
+    userRepository.save(new UserEntity("Jane Lewis", "janelewis@mail.com", "0987654321"));
+    userRepository.save(new UserEntity("James Smith", "jamessmith@mail.com", "1234567890"));
     userRepository.save(new UserEntity("Alice Johnson", "alice@mail.com", "1112223333"));
     userRepository.save(new UserEntity("Bob Williams", "bob@mail.com", "4445556666"));
     userRepository.save(new UserEntity("Charlie Brown", "charlie@mail.com", "7778889999"));
